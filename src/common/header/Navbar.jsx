@@ -11,7 +11,7 @@ const Navbar = () => {
           <div className='catgrories d_flex'>
             <span class='fa-solid fa-border-all'></span>
             <h4>
-              Categories <i className='fa fa-chevron-down'></i>
+              Danh mục sản phẩm <i className='fa fa-chevron-down'></i>
             </h4>
           </div>
 
@@ -19,22 +19,22 @@ const Navbar = () => {
             <ul className={MobileMenu ? "nav-links-MobileMenu" : "link f_flex capitalize"} onClick={() => setMobileMenu(false)}>
               {/*<ul className='link f_flex uppercase {MobileMenu ? "nav-links-MobileMenu" : "nav-links"} onClick={() => setMobileMenu(false)}'>*/}
               <li>
-                <Link to='/'>home</Link>
+                <Link to='/'>Trang chủ </Link>
               </li>
               <li>
-                <Link to='/pages'>pages</Link>
+                <Link to='/pages'>Sản phẩm yêu thích</Link>
               </li>
               <li>
-                <Link to='/user'>user account</Link>
+                <Link to='/user'>Giao hàng</Link>
               </li>
               <li>
-                <Link to='/vendor'>vendor account</Link>
+                <Link to='/vendor'>Hướng dẫn</Link>
               </li>
               <li>
-                <Link to='/track'>track my order</Link>
+                <Link to='/track'>Tư vấn</Link>
               </li>
               <li>
-                <Link to='/contact'>contact</Link>
+                <Link to='/contact'>Liên hệ</Link>
               </li>
             </ul>
 

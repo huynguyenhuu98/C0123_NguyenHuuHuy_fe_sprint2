@@ -3,49 +3,33 @@ import React from "react"
 const Categories = () => {
   const data = [
     {
-      cateImg: "./images/category/cat1.png",
-      cateName: "Fashion",
+      cateImg: "./images/category/phuot.png",
+      cateName: "Phuột - thắng",
     },
     {
-      cateImg: "./images/category/cat2.png",
-      cateName: "Electronic",
+      cateImg: "./images/category/lopxe.png",
+      cateName: "Lốp xe",
     },
     {
-      cateImg: "./images/category/cat3.png",
-      cateName: "Cars",
+      cateImg: "./images/category/kinhgu.png",
+      cateName: "Kính - gù",
     },
     {
-      cateImg: "./images/category/cat4.png",
-      cateName: "Home & Garden",
+      cateImg: "./images/category/denled.png",
+      cateName: "Đèn led",
     },
     {
-      cateImg: "./images/category/cat5.png",
-      cateName: "Gifts",
+      cateImg: "./images/category/nhotxe.png",
+      cateName: "Nhớt xe máy",
     },
     {
-      cateImg: "./images/category/cat6.png",
-      cateName: "Music",
+      cateImg: "./images/category/phutung.png",
+      cateName: "Phụ tùng thay thế",
     },
     {
-      cateImg: "./images/category/cat7.png",
-      cateName: "Health & Beauty",
-    },
-    {
-      cateImg: "./images/category/cat8.png",
-      cateName: "Pets",
-    },
-    {
-      cateImg: "./images/category/cat9.png",
-      cateName: "Baby Toys",
-    },
-    {
-      cateImg: "./images/category/cat10.png",
-      cateName: "Groceries",
-    },
-    {
-      cateImg: "./images/category/cat11.png",
-      cateName: "Books",
-    },
+      cateImg: "./images/category/phukienbiker.png",
+      cateName: "Phụ kiện biker",
+    }
   ]
 
   return (

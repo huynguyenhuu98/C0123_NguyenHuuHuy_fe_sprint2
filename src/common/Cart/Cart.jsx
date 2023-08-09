@@ -10,25 +10,23 @@ const Cart = ({ CartItem, addToCart, decreaseQty }) => {
     <>
       <section className='cart-items'>
         <div className='container d_flex'>
-          {/* if hamro cart ma kunai pani item xaina bhane no diplay */}
 
           <div className='cart-details'>
             {CartItem.length === 0 && <h1 className='no-items product'>No Items are add in Cart</h1>}
 
-            {/* yasma hami le cart item lai display garaaxa */}
             {CartItem.map((item) => {
               const productQty = item.price * item.qty
 
               return (
                 <div className='cart-list product d_flex' key={item.id}>
                   <div className='img'>
-                    <img src={item.cover} alt='' />
+                    <img src={item.images} alt='' />
                   </div>
                   <div className='cart-details'>
-                    <h3>{item.name}</h3>
+                    <h3>{item.nameRacing}</h3>
                     <h4>
-                      ${item.price}.00 * {item.qty}
-                      <span>${productQty}.00</span>
+                      ${item.price} * {item.qty}
+                      <span>${productQty}</span>
                     </h4>
                   </div>
                   <div className='cart-items-function'>
@@ -57,10 +55,10 @@ const Cart = ({ CartItem, addToCart, decreaseQty }) => {
           </div>
 
           <div className='cart-total product'>
-            <h2>Cart Summary</h2>
+            <h2>Tóm tắt giỏ hàng</h2>
             <div className=' d_flex'>
-              <h4>Total Price :</h4>
-              <h3>${totalPrice}.00</h3>
+              <h4>Tổng thanh toán :</h4>
+              <h3>${totalPrice}</h3>
             </div>
           </div>
         </div>

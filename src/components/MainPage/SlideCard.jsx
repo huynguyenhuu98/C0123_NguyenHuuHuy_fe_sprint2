@@ -23,12 +23,12 @@ const SlideCard = () => {
             <>
               <div className='box d_flex top' key={index}>
                 <div className='left'>
-                  <h1>{value.title}</h1>
+                  <h1 style={{color: "#e94560"}}>{value.title}</h1>
                   <p>{value.desc}</p>
-                  <button className='btn-primary'>Visit Collections</button>
+                  <button className='btn-primary'>Xem thêm</button>
                 </div>
                 <div className='right'>
-                  <img src={value.cover} alt='' />
+                  <img src={value.cover} alt='' width="350" height="350"/>
                 </div>
               </div>
             </>

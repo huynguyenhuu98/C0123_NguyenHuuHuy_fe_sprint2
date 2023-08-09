@@ -1,16 +1,87 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+/** {*/
+/*  padding: 0;*/
+/*  margin: 0;*/
+/*  box-sizing: border-box;*/
+/*}*/
+/* Default styles for all screen sizes */
+/** {*/
+/*  padding: 0;*/
+/*  margin: 0;*/
+/*  box-sizing: border-box;*/
+/*  word-wrap: break-word;*/
+/*  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Ubuntu, sans-serif;*/
+/*}*/
+
+/*!* Add media query for smaller screens (max-width: 768px) *!*/
+/*@media (max-width: 768px) {*/
+/*  !* Adjust container width and margins for smaller screens *!*/
+/*  .container {*/
+/*    max-width: 100%;*/
+/*    margin: 0;*/
+/*    padding: 0 20px;*/
+/*  }*/
+
+/*  !* Modify navigation links for smaller screens *!*/
+/*  header ul {*/
+/*    display: none;*/
+/*  }*/
+/*  .nav-links-mobile {*/
+/*    display: block;*/
+/*  }*/
+/*  header ul li {*/
+/*    width: 100%;*/
+/*    text-align: center;*/
+/*    line-height: 50px;*/
+/*  }*/
+/*}*/
+
+/*!* Add media query for even smaller screens (max-width: 480px) *!*/
+/*@media (max-width: 480px) {*/
+/*  !* Adjust font size for smaller screens *!*/
+/*  body {*/
+/*    font-size: 14px;*/
+/*  }*/
+
+/*  !* Adjust search bar for smaller screens *!*/
+/*  .search {*/
+/*    padding: 10px;*/
+/*  }*/
+/*  .search-box {*/
+/*    width: 100%;*/
+/*  }*/
+/*  .search-box input {*/
+/*    padding: 5px;*/
+/*    font-size: 12px;*/
+/*  }*/
+/*  .search-box span {*/
+/*    display: none;*/
+/*  }*/
+/*}*/
+
+/*!* Add media query for larger screens (min-width: 1024px) *!*/
+/*@media (min-width: 1024px) {*/
+/*  !* Add specific styles for larger screens, if needed *!*/
+/*}*/
+
+/*!* Add more media queries as needed for other screen sizes *!*/
+
+
 * {
   padding: 0;
   margin: 0;
+  /*color: #1a1f36;*/
   box-sizing: border-box;
+  word-wrap: break-word;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Ubuntu,sans-serif;
 }
 html {
   scroll-behavior: smooth;
 }
-body {
-  font-family: "Poppins", sans-serif;
-  background-color: #ffffff;
-}
+/*body {*/
+/*  font-family: "Times New Roman", sans-serif;*/
+/*  background-color: #ffffff;*/
+/*}*/
 .background {
   background: #f6f9fc;
   padding: 50px 0;
