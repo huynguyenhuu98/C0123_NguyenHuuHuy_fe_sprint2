@@ -21,7 +21,7 @@
 /*  height: auto;*/
 /*}*/
 .search .width {
-  width: 20%;
+  /*width: 20%;*/
 }
 .search-box {
   width: 80%;
@@ -70,7 +70,7 @@
 }
 /*------search-----------*/
 .catgrories {
-  background-color: #f6f9fc;
+  /*background-color: #f6f9fc;*/
   padding: 0px 30px;
   border-radius: 5px;
   height: 6vh;
@@ -78,8 +78,8 @@
 }
 .catgrories span {
   margin-right: 20px;
-  font-size: 30px;
-  margin-top: 10px;
+  /*font-size: 30px;*/
+  margin-top: 6px;
 }
 .catgrories h4 {
   font-weight: 500;

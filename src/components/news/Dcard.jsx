@@ -1,11 +1,24 @@
-import React from "react"
+import React, {useEffect, useState} from "react"
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
-import Ddata from "./Ddata"
-import "../newarrivals/style.css"
+import moment from "moment";
+import "./style.css"
+import * as servicePosts from "../../service/PostsService";
+import {NavLink} from "react-router-dom";
 
 const Dcard = () => {
+  const [posts, setPosts] = useState([])
+  const findAllPosts = async () => {
+    const result = await servicePosts.findAllPosts()
+    setPosts(result.content)
+  }
+  useEffect(() => {
+    findAllPosts()
+  }, [])
+  const formatDateTime = (dateTime) => {
+    return moment(dateTime).format("DD/MM/YYYY");
+  };
   const settings = {
     dots: false,
     infinite: true,
@@ -16,15 +29,17 @@ const Dcard = () => {
   return (
     <>
       <Slider {...settings}>
-        {Ddata.map((value, index) => {
+        {posts.map((value, index) => {
           return (
             <>
               <div className='box product' key={index}>
+                <NavLink className="text-decoration-none" to={`detail/${value.id}`}>
                 <div className='img'>
-                  <img src={value.cover} alt='' width='100%' />
+                  <img src={value.image} alt='' width='100%' />
                 </div>
-                <h4 style={{marginTop:"6px"}}>{value.name}</h4>
-                <span>{value.price}</span>
+                <h6 className="text-black" style={{marginTop:"6px"}}>{value.title}</h6>
+                </NavLink>
+                <div className="time-post1">{formatDateTime(value.createDate)}</div>
               </div>
             </>
           )

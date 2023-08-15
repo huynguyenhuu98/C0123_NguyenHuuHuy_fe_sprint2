@@ -19,6 +19,7 @@ const Shop = ({ addToCart, shopItems }) => {
                 <span>Xem thêm</span>
                 <i className='fa-solid fa-caret-right'></i>
               </div>
+
             </div>
             <div className='product-content  grid1'>
               <ShopCart addToCart={addToCart} shopItems={shopItems} />

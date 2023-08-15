@@ -8,11 +8,11 @@ const TopCate = () => {
       <section className='TopCate background'>
         <div className='container'>
           <div className='heading d_flex'>
-            <div className='heading-left row  f_flex'>
+            <div className='heading-left f_flex'>
               <i className='fa-solid fa-border-all'></i>
-              <h2>Các mẫu xe kiểng</h2>
+              <h3 style={{margin:"10px 0px"}}>Các mẫu xe kiểng</h3>
             </div>
-            <div className='heading-right row '>
+            <div className='heading-right '>
               <span>View all</span>
               <i className='fa-solid fa-caret-right'></i>
             </div>
