@@ -12,10 +12,10 @@ const TopCate = () => {
               <i className='fa-solid fa-border-all'></i>
               <h3 style={{margin:"10px 0px"}}>Các mẫu xe kiểng</h3>
             </div>
-            <div className='heading-right '>
-              <span>View all</span>
-              <i className='fa-solid fa-caret-right'></i>
-            </div>
+            {/*<div className='heading-right '>*/}
+            {/*  <span>View all</span>*/}
+            {/*  <i className='fa-solid fa-caret-right'></i>*/}
+            {/*</div>*/}
           </div>
           <TopCart />
         </div>

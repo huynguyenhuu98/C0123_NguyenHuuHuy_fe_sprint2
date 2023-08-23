@@ -82,12 +82,12 @@ export function DetailPosts() {
                                     posts.map((post) => (
                                         <div className="row mt-3">
                                             <div className="col-4">
-                                                <div className="image-post"><a href={`/detail/${post.id}`}>
+                                                <div className="image-post"><a href={`/detailPosts/${post.id}`}>
                                                     <img style={{width: "100%",height: "100%",objectFit: "cover"}}
                                                          src={post.image} alt=""/> </a></div>
                                             </div>
                                             <div className="col-8 mt-2">
-                                                <a className="text-decoration-none" href={`/detail/${post.id}`}><h3 className="title-post text-posts ms-2">{post.title}</h3></a>
+                                                <a className="text-decoration-none" href={`/detailPosts/${post.id}`}><h3 className="title-post text-posts ms-2">{post.title}</h3></a>
                                                 <span className="time-post1 d-flex justify-content-end text-posts">{formatDateTime(post.createDate)}</span>
                                             </div>
                                         </div>

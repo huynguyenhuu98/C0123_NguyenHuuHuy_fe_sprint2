@@ -140,8 +140,9 @@ button {
   padding: 20px;
   position: relative;
   border-radius: 8px;
-  box-shadow: rgb(3 0 71 / 9%) 0px 1px 3px;
   margin: 10px;
+  box-shadow: rgb(3 0 71 / 9%) 0px 1px 3px;
+
 }
 .product h3 {
   font-weight: 400;

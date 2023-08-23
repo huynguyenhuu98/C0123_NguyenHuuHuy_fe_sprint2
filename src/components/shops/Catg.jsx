@@ -32,7 +32,6 @@ const Catg = () => {
       <div className='category'>
         <div className='chead d_flex'>
           <h1>Brands </h1>
-          <h1>Shops </h1>
         </div>
         {data.map((value, index) => {
           return (
@@ -42,9 +41,9 @@ const Catg = () => {
             </div>
           )
         })}
-        <div className='box box2'>
-          <button>View All Brands</button>
-        </div>
+        {/*<div className='box box2'>*/}
+        {/*  <button>View All Brands</button>*/}
+        {/*</div>*/}
       </div>
     </>
   )

@@ -84,8 +84,8 @@ export function Login() {
                                                         localStorage.setItem("username", res.username)
                                                         localStorage.setItem("role", res.role)
                                                     }
-                                                    nav("/")
                                                     toast('Đăng nhập thành công')
+                                                    nav("/")
                                                 } catch (e) {
                                                     toast.error(e.res.data);
                                                 } finally {

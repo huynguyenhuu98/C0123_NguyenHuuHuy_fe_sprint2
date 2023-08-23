@@ -7,31 +7,31 @@ const Navbar = () => {
     const [MobileMenu, setMobileMenu] = useState(false)
     const data = [
         {
-            cateImg: "./images/category/phuot.png",
+            cateImg: "/images/category/phuot.png",
             cateName: "Phuột - thắng",
         },
         {
-            cateImg: "./images/category/lopxe.png",
+            cateImg: "/images/category/lopxe.png",
             cateName: "Lốp xe",
         },
         {
-            cateImg: "./images/category/kinhgu.png",
+            cateImg: "/images/category/kinhgu.png",
             cateName: "Kính - gù",
         },
         {
-            cateImg: "./images/category/denled.png",
+            cateImg: "/images/category/denled.png",
             cateName: "Đèn led",
         },
         {
-            cateImg: "./images/category/nhotxe.png",
+            cateImg: "/images/category/nhotxe.png",
             cateName: "Nhớt xe máy",
         },
         {
-            cateImg: "./images/category/phutung.png",
+            cateImg: "/images/category/phutung.png",
             cateName: "Phụ tùng thay thế",
         },
         {
-            cateImg: "./images/category/phukienbiker.png",
+            cateImg: "/images/category/phukienbiker.png",
             cateName: "Phụ kiện biker",
         }
     ]
@@ -87,7 +87,7 @@ const Navbar = () => {
                                 <Link className="text-decoration-none text-black" to='/advise'>Tư vấn</Link>
                             </li>
                             <li>
-                                <Link className="text-decoration-none text-black" to='/contact'>Liên hệ</Link>
+                                <Link className="text-decoration-none text-black" to='/introduce'>Giới thiệu</Link>
                             </li>
                         </ul>
 

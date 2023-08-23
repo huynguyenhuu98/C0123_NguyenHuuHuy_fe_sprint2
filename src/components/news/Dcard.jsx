@@ -33,7 +33,7 @@ const Dcard = () => {
           return (
             <>
               <div className='box product' key={index}>
-                <NavLink className="text-decoration-none" to={`detail/${value.id}`}>
+                <NavLink className="text-decoration-none" to={`detailPosts/${value.id}`}>
                 <div className='img'>
                   <img src={value.image} alt='' width='100%' />
                 </div>
