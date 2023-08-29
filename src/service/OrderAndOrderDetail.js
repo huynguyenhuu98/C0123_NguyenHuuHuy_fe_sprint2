@@ -16,26 +16,26 @@ export const saveOrderAndOrderDetail =async (shopping) => {
 export const listHistory = async () => {
     const token = localStorage.getItem('token');
     try {
-        const res = (await axios.get('http://localhost:8080/api/order/orderDetail/history',
+        const result = (await axios.get('http://localhost:8080/api/order/orderDetail/history',
             {
                 headers: {
                     Authorization: `Bearer ${token}`,
                 }
             })).data
-        return res
+        return result
     }catch (e) {
     }
 }
 export const historyDetail = async () => {
     const token = localStorage.getItem('token');
     try {
-        const res = (await axios.get('http://localhost:8080/api/order/orderDetail/history/detail/?id=${id}',
+        const result = (await axios.get('http://localhost:8080/api/order/orderDetail/history/detail/?id=${id}',
             {
                 headers: {
                     Authorization: `Bearer ${token}`,
                 }
             })).data
-        return res
+        return result
     }catch (e) {
     }
 }
